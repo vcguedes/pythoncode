@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('hello world') {
+        stage('checkout') {
             steps {
                  git branch: 'main', credentialsId: 'gitcred', url: 'https://github.com/vcguedes/pythoncode.git'
             }
